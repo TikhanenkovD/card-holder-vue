@@ -40,7 +40,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 420px;
     width: 100%;
     height: 245px;
     border-radius: 16px;
@@ -49,6 +48,7 @@ export default {
             rgba(108, 9, 121, 0.2) 49%,
             rgba(0, 212, 255, 0.3) 100%);
     color: white;
+    margin-bottom: 35px;
 
     &__number {
         font-size: 18px;

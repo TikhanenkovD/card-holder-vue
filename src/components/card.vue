@@ -1,16 +1,27 @@
 <template>
 <div class="card">
     <cardPreview :cardNumber="456345345345"></cardPreview>
-
+    <cardInput :label="card" :placeholder="card"></cardInput>
+    <cardInput :label="name" :placeholder="name"></cardInput>
 </div>
 </template>
 
 <script>
 import cardPreview from "./card-preview.vue";
+import cardInput from "./card-input.vue";
+
 export default {
     name: "card",
+    data: function () {
+        return {
+            name: "Name",
+            card: "Card Number"
+        }
+
+    },
     components: {
-        cardPreview
+        cardPreview,
+        cardInput
     },
     props: {
 
